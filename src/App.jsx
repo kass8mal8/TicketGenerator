@@ -9,7 +9,7 @@ function App() {
 	const [user, setUser] = useState(null);
 	return (
 		<UserContext.Provider value={{ user, setUser }}>
-			<div className="py-2 md:container mx-auto ">
+			<div className="py-2 md:container mx-auto relative">
 				<Routes>
 					<Route path="/" element={<Registration />} />
 					<Route path="/ticket" element={<TicketEvent />} />

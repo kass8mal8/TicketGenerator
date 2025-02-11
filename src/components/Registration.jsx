@@ -3,6 +3,7 @@ import logo from "../assets/images/logo-full.svg";
 import Upload from "./Upload";
 import { UserContext } from "./UserContext";
 import { useNavigate } from "react-router-dom";
+import squigglyBottomDesktop from "../assets/images/pattern-squiggly-line-bottom-desktop.svg";
 
 const Registration = () => {
 	const { setUser } = useContext(UserContext);
@@ -121,6 +122,11 @@ const Registration = () => {
 					Generate My Ticket
 				</button>
 			</form>
+			<img
+				src={squigglyBottomDesktop}
+				alt=""
+				className="hidden absolute -mt-[26%] -left-[7%] -z-20 md:block"
+			/>
 		</div>
 	);
 };

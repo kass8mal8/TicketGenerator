@@ -39,7 +39,9 @@ const Upload = ({ avatar, setAvatar, handleImageChange }) => {
 					</label>
 				</section>
 			) : (
-				<p className="text-neutral-300">Drag and drop or click to upload</p>
+				<p className="text-neutral-300 text-center">
+					Drag and drop or click to upload
+				</p>
 			)}
 			{!avatar && (
 				<input
